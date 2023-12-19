@@ -10,3 +10,9 @@ class AddForm(FlaskForm):
 class DelForm(FlaskForm):
     id = IntegerField("ID Number of Puppy to remove")
     submit = SubmitField("Remove Puppy")
+
+
+class AddOwnerForm(FlaskForm):
+    name = StringField("Name of Owner: ")
+    id = IntegerField("ID Number of Puppy associated to Owner")
+    submit = SubmitField("Add Owner")
