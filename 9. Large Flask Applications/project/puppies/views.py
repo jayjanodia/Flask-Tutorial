@@ -16,7 +16,7 @@ def add():
         db.session.add(new_pup)
         db.session.commit()
 
-        return redirect(url_for("puppies.list_puppies"))
+        return redirect(url_for("puppies.list"))
 
     return render_template("add_puppies.html", form=form)
 
@@ -37,5 +37,5 @@ def delete():
         db.session.delete(pup)
         db.session.commit()
 
-        return redirect(url_for("puppies.list_puppies"))
+        return redirect(url_for("puppies.list"))
     return render_template("delete_puppies.html", form=form)

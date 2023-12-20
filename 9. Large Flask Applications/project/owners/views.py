@@ -18,5 +18,5 @@ def add():
         db.session.add(owner)
         db.session.commit()
 
-        return redirect(url_for("puppies.list_puppies"))
+        return redirect(url_for("puppies.list"))
     return render_template("add_owner.html", form=form)

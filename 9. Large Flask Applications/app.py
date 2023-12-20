@@ -1,10 +1,10 @@
 from flask import render_template
-from project import app
+from project import app, db
 
 
 @app.route("/")
 def index():
-    return render_template("home.html")
+    return render_template("index.html")
 
 
 if __name__ == "__main__":
