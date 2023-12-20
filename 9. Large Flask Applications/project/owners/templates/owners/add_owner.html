@@ -1,0 +1,14 @@
+{# djlint:off T003, H029 #}
+{% extends "base.html" %}
+{% block content %}
+  <div class="jumbotron">
+    <h1>Add Owner name</h1>
+    <p>Add Owner ID</p>
+    <form method="post">
+      {{ form.hidden_tag() }} {{ form.name.label() }} {{ form.name() }}
+    </br>
+    {{ form.hidden_tag() }} {{ form.id.label() }} {{ form.id() }}
+    {{ form.submit() }}
+  </form>
+</div>
+{% endblock %}

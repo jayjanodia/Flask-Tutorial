@@ -1,0 +1,10 @@
+{# djlint:off T003 #}
+{% extends "base.html" %}
+{% block content %}
+  <div class="jumbotron">
+    <h1>Here are the list of puppies:</h1>
+    <ul>
+      {% for pup in puppies %}<li>{{ pup }}</li>{% endfor %}
+    </ul>
+  </div>
+{% endblock %}
